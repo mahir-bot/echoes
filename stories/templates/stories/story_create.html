@@ -1,0 +1,13 @@
+{%extends 'base_layout.html'%}
+
+{%block content%}
+<div class="story-create">
+    <form class="site-form" action="{%url 'stories:create'%}" method="POST" enctype="multipart/form-data">
+        <h2>Give Your Voice</h2>
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="submit" value="Create">
+    </form>
+</div>
+<script src="/static/slugify.js"></script>
+{%endblock%}

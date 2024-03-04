@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %} {% block content %}
+<h1> Story List </h1>
+<div class="stories">
+    {% for data in Story%}
+    <div class="story">
+        <h2><a href="{{data.slug}}">{{data.title}}</a></h2>
+        <p>{{data.snippet}}</p>
+        <p>{{data.created_at}}</p>
+        <p class="author">added by {{data.author.username}}</p>
+    </div>
+    {%endfor%}
+</div>
+{% endblock %}

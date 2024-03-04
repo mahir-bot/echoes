@@ -1,0 +1,12 @@
+{%extends 'base_layout.html'%}
+
+{%block content%}
+<div class="story-detail">
+    <div class="story">
+        <img src="{{Story.thumbnil.url}}" alt="image">
+        <h2>{{Story.title}}</h2>
+        <p>{{Story.content}}</p>
+        <p>{{Story.created_at}}</p>
+    </div>
+</div>
+{%endblock%}
