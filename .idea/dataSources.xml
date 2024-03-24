@@ -8,7 +8,7 @@
       <jdbc-url>jdbc:mysql://localhost:3306/</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <driver-properties>
-        <property name="connectionTimeZone" value="GMT" />
+        <property name="connectionTimeZone" value="GMT+6" />
       </driver-properties>
     </data-source>
   </component>
